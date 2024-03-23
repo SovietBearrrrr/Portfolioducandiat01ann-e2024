@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!-- Formalités : compatibilité, import -->
+   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link href="CSS main page.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="Icone main page.png">
+    <title>Portfolio du candidat 01 année 2024</title>
+  </head>
+
+  <!-- Navigation -->
+
+  <body>
+    <div class="header">
+      <a href="#default" class="logo">Mon Projet</a>
+      <div class="header-right">
+        <a class="active">Exemple bouton 1</a>
+        <a>Exemple bouton 2</a>
+        <a>Exemple bouton 3</a>
+      </div>
+    </div>
+
+    <!-- Paragraphe Start -->
+  
+    <div class="paragraphe">
+      <h1> <cite>Bonjour,</cite></h1>
+      <h2> Bienvenue sur ma page de présentation ! </h2>
+    </div>
+   
+    <!-- Paragraphe End  -->
+
+    <!-- Carousel -->
+  
+    <section class="section">
+      <div class="slider">
+        <div class="slide">
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+        
+          <!-- Bouton d'ordre de passage des photos -->
+       
+          <div class="nav-auto">
+            <div class="a-b1"></div>
+            <div class="a-b2"></div>
+            <div class="a-b3"></div>
+            <div class="a-b4"></div>
+          </div> 
+          
+         <!-- Photo -->
+   
+         <div class="st first">
+         <img src="Image slide 1.jpeg" alt="Image d'Albion Online">
+     </div>
+      <div class="st">
+        <img src="Image slide 2.jpeg" alt="Image d'Albion Online">
+      </div>
+      <p> </p>
+      <div class="st">
+       <img src="Image slide 3.jpeg" alt="Image d'Albion Online">
+      </div>
+      <div class="st">
+        <img src="Image slide 4.jpeg" alt="Image d'Albion Online">
+      </div>     
+    </div>
+
+        <!-- Automatiser le passage des photos -->
+        <div class="nav-m"></div>
+        <label for="radio1" class="m-btn"></label>
+        <label for="radio2" class="m-btn"></label>
+        <label for="radio3" class="m-btn"></label>
+        <label for="radio4" class="m-btn"></label>
+      </div>
+    </section>
+ 
+    <!-- Paragraphe de texte  -->
+   
+  <h4>Mes premières rencontres avec le domaine de l'informatique</h4>
+  <p>	Ma première rencontre avec l’informatique s’est faite lorsque  j'ai commencé à m’émerveiller devant les jeux vidéos. Cela me fascinait et j’ai vite compris que,  grâce à la micro-ingénierie électrique, il puisse y avoir des images qui  bougent sur mon écran et que je puisse interagir avec. Je me suis donc ,pendant mes années de collège , tout particulièrement  intéressé aux mathématiques et à la technologie. A la fin de mon collège j’ai pu réaliser un stage à l’institut Supagro dans leur pôle informatique. Là bas j’ai appris à faire des mises à jour Linux, démonter/remonter un pc.  </p>
+  <h4>Un projet différent</h4>
+  <p>Durant mon année de 1ère je n’ai malheureusement pas pris les spécialités mathématiques et informatique car j’avais en tête de me convertir dans le journalisme numérique. De plus, la spécialité de SNI n’existe pas dans mon lycée. J’ai donc pris la spécialité HGGSP en 1e et en terminale SVT et HLP. C’est en fin de première et début de terminale que je me suis reconverti dans l’informatique en créant ce projet en autonomie. Pour complémenter ce projet, dans mon internat , nous avons créé notre propre salle informatique en réseau local avec un serveur de type NAS.</p>
+  <h4>La visualisation de mon avenir</h4>
+  <p>Mon projet dans l’informatique est pour l’instant de devenir développeur web full-satck mais découvrir d’autres notions d’informatique telle que le C/C#/C++  me plaît aussi. Je ne fais aucune impasse sur quelconque domaine de l’informatique autant l’aspect matériel, technique, pratique que l’aspect théorique.</p>
+  <h4>Ce projet</h4>
+  <p>Cependant l’année scolaire de terminale, j’ai commencé a créer mon propre projet en autonomie. Ce projet étant le site sur lequel vous êtes actuellement. Le  défi majoritaire de ce projet est le frontend pour une première expérience plus avancée dans le code. Il est réalisé en Html, CSS et Java-script. Le code source du site visible . Les points forts de ce site sont selon moi son slider mon 1e projet technique et sa réactivité.  </p>
+  <h4>Ma consience écologique dans le monde de l'informatique</h4>
+  <p>J’ai conscience que le numérique a un grand coût énergétique et matériel, tant au niveau des composants que de la ressource en électricité nécessaire. Je m’intéresse à découvrir d’autres voies afin de pouvoir utiliser les ressources de manière raisonnée et à prendre à compte la question climatique dans mes futures études et mon futur emploi. </p>
+  <h4>Problème rencontré durant ce projet</h4>
+  <p>Durant ce projet j'ai rencontré plusieurs problèmes telle que:</p>
+  <li>L'ajustement des diapositives du slider car l'allignement du texte a décalé les images</li>
+  <li>La complexité de l'ajustement des boutons sur le slider</li>
+  
+  
+  <!-- Paragraphe de texte  -->
+ 
+   <div class="end-page"> 
+    </div>
+
+  </body>
+</html>
+   
+<!-- Conteur JavaScript pour savoir quand retourner à 0 et déplacer les diapo-->
+  
+  <script type="text/javascript">
+      var counter = 1;
+      setInterval(function() {
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if (counter > 4) {
+          counter = 1;
+        }
+      }, 8000);
+    </script>
+    
+    <!-- Carrousel fin -->
